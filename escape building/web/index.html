@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Floors Out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>FIVE FLOORS OUT</h1>
+    <p class="rule" id="rule"></p>
+  </header>
+  <div class="layout">
+    <nav class="tower" id="tower" aria-label="Floors of the building"></nav>
+    <main class="main">
+      <div class="stage" id="stage"><canvas id="cv" aria-label="Game view"></canvas></div>
+      <section class="panel" id="panel" hidden></section>
+      <div class="controls" id="controls"></div>
+      <pre class="mission" id="mission"></pre>
+    </main>
+  </div>
+</div>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="card">
+    <h2 id="mTitle"></h2>
+    <p id="mText"></p>
+    <button class="btn" id="mBtn" type="button"></button>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
